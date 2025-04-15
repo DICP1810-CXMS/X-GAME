@@ -10,6 +10,7 @@ This tool implements a rigorous filtering strategy that retains only the most co
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 1) stringent filtering of cross-links.py
+
 The program processes cross-linking mass spectrometry (XL-MS) data from pLink2/pLink3 search results to:
 ✅ Separate intra-protein (within-protein) and inter-protein (protein-protein interaction, PPI) cross-links.
 ✅ Reduce ambiguous matches by retaining only the highest-confidence cross-link site pair per spectrum.
@@ -52,6 +53,7 @@ inter_protein_PPI	PPI statistics: (spectra/site counts per protein pair).
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 2) PPI_evaluation.R - Protein-Protein Interaction Biological Relevance Assessment
+
 This script utilizes the [GOSemSim](https://yulab-smu.top/biomedical-knowledge-mining-book/GOSemSim.html) R package to evaluate the biological relevance of filtered protein-protein interactions (PPIs)
 by calculating Gene Ontology (GO) semantic similarity across three domains:
 Cellular Component (CC)
